@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    width: 100%;
+    background-color: rgba(0, 0, 255, 0.178);
+}
+
+.containerNav{
+    width: 100%;
+    display: flex;
+}
+
+.containerLogo{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.containerLogo:hover{
+    cursor: pointer;
+}
+
+.botones{
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+}
+
+.btn {
+    text-align: center;
+    width: 100%;
+}
+
+.btn>a{
+    color: rgb(0, 0, 0);
+    padding: 25px;
+    display: block;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: rgba(240, 248, 255, 0.386);
+}
+
+/* RESPONSIVE */
+.containerResponsive{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerNavResponsive{
+    display: flex;
+    justify-content: space-between;
+    padding: 28px;
+}
+
+.botonesResponsive{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+.btnR{
+    border: 1px solid rgba(204, 116, 243, 0.642);
+}
+
+.btnR>a{
+    display: block;
+    padding: 23px ;
+    text-decoration: none;
+}
+
+.containerAbrir:hover{
+    cursor: pointer;
+}
+
+.responsiveActive{
+    position: absolute;
+    top: -3000px;
+    height: 0;
+}
+
+@media(max-width: 800px){
+    .containerNav{
+        display: none;
+    }
+
+    .containerResponsive{
+        display: flex;
+    }
+}
+
+
+@media(min-width: 801px){
+    .containerResponsive{
+        display: none;
+    }
+
+    .containerNav{
+        display: flex;
+    }
+
+}
+
+
+@media(min-width: 1280px){
+    .containerNav{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media(max-width: 580){
+    .containerLogo{
+        width: 20%;
+    }
+
+    .botones{
+        width: 80%;
+    }
+}
+
